@@ -7,9 +7,18 @@
     "build": "tsc",
     "test": "vitest"
   },
-  "keywords": [],
-  "author": "Thorsten Schmitt",
+  "keywords": [
+    "icon",
+    "favicon",
+    "web",
+    "icon",
+    "grabber",
+    "crawl"
+  ],
+  "homepage": "https://github.com/sthorsten/web-icon-grabber",
+  "author": "Thorsten Schmitt <dev@tschmitt.eu>",
   "license": "MIT",
+  "repository": "github:sthorsten/web-icon-grabber",
   "dependencies": {
     "cheerio": "1.0.0-rc.12"
   },
