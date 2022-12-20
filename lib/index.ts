@@ -32,8 +32,15 @@ export const getIcons = async (url: string, preferredMinSize = 64): Promise<WebI
   const linkIcons = parseLinkIcons(iconLinks)
   linkIcons.forEach(i => iconGrabber.icons?.push(i))
 
+  // 4. Add default favicon if no icon tag was found
+  if (iconGrabber.icons == null || iconGrabber.icons.length === 0) {
+    iconGrabber.icons = [{
+      imageType: 'ico',
+      src: iconGrabber.baseUrl + '/favicon.ico'
+    }]
+  }
 
-  // 4. Additional data
+  // 5. Additional data
   iconGrabber.totalIcons = iconGrabber.icons?.length ?? 0
   iconGrabber.title = $('title').text()
 

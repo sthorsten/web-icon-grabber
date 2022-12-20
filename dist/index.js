@@ -34,7 +34,14 @@ const getIcons = (url, preferredMinSize = 64) => __awaiter(void 0, void 0, void 
     let iconLinks = $('head').find('link[rel*=icon]');
     const linkIcons = parseLinkIcons(iconLinks);
     linkIcons.forEach(i => { var _a; return (_a = iconGrabber.icons) === null || _a === void 0 ? void 0 : _a.push(i); });
-    // 4. Additional data
+    // 4. Add default favicon if no icon tag was found
+    if (iconGrabber.icons == null || iconGrabber.icons.length === 0) {
+        iconGrabber.icons = [{
+                imageType: 'ico',
+                src: iconGrabber.baseUrl + '/favicon.ico'
+            }];
+    }
+    // 5. Additional data
     iconGrabber.totalIcons = (_c = (_b = iconGrabber.icons) === null || _b === void 0 ? void 0 : _b.length) !== null && _c !== void 0 ? _c : 0;
     iconGrabber.title = $('title').text();
     return iconGrabber;
