@@ -14,7 +14,7 @@ export const getIcons = async (url: string, preferredMinSize = 64): Promise<WebI
 
   // 2. Try data from manifest if it exists
   let manifest = $('head').find('link[rel=manifest]')
-  if (manifest) {
+  if (manifest && manifest.length > 0) {
     const manifestUrl = iconGrabber.baseUrl + manifest.attr('href') ?? ""
     const manifestData: WebManifest = await downloadManifest(manifestUrl)
 

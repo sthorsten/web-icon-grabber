@@ -20,7 +20,7 @@ const getIcons = (url, preferredMinSize = 64) => __awaiter(void 0, void 0, void 
     iconGrabber.baseUrl = parseBaseUrl(url);
     // 2. Try data from manifest if it exists
     let manifest = $('head').find('link[rel=manifest]');
-    if (manifest) {
+    if (manifest && manifest.length > 0) {
         const manifestUrl = (_a = iconGrabber.baseUrl + manifest.attr('href')) !== null && _a !== void 0 ? _a : "";
         const manifestData = yield downloadManifest(manifestUrl);
         iconGrabber.hasManifest = true;
