@@ -1,7 +1,6 @@
 # Web Icon Grabber
 
 ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/sthorsten/web-icon-grabber?label=version)
-
 ![Maintained with Renovate](https://img.shields.io/static/v1?label=maintained%20with&message=renovate&color=blue&logo=RenovateBot)
 
 ## Description
