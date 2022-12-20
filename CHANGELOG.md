@@ -9,6 +9,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -/-
 
+
+## [1.0.1] - 2022-12-20
+
+### Added
+
+- Default /favicon.ico when no other icons were found
+- .npmignore
+
+### Fixed
+
+- Missing manifest leading to invalid url
+- Default icon type exports
+
+
 ## [1.0.0] - 2022-12-20
 
 ### Added 
@@ -19,6 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add LICENSE
 
 
-[unreleased]: https://github.com/sthorsten/web-icon-grabber/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/sthorsten/web-icon-grabber/compare/v1.0.1...HEAD
 
+[1.0.1]: https://github.com/sthorsten/web-icon-grabber/releases/tag/v1.0.1
 [1.0.0]: https://github.com/sthorsten/web-icon-grabber/releases/tag/v1.0.0

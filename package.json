@@ -1,6 +1,6 @@
 {
   "name": "web-icon-grabber",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gets icons from any website via manifest file or icon tags",
   "main": "./dist/index.js",
   "scripts": {

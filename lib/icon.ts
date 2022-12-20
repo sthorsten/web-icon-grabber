@@ -1,5 +1,5 @@
 
-interface WebIconGrabber {
+export interface WebIconGrabber {
   title: string,
   baseUrl: string,
   totalIcons: number,
@@ -7,7 +7,7 @@ interface WebIconGrabber {
   icons: WebIcon[]
 }
 
-interface WebIcon {
+export interface WebIcon {
   src: string,
   imageType: string,
   size?: number,
@@ -15,5 +15,3 @@ interface WebIcon {
   manifestSizes?: string,
   manifestType?: string,
 }
-
-export { WebIconGrabber, WebIcon }
