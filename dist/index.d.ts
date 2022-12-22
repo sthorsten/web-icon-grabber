@@ -1,2 +1,3 @@
-import { WebIconGrabber } from './icon';
-export declare const getIcons: (url: string, preferredMinSize?: number) => Promise<WebIconGrabber>;
+import { getIcons } from './handler';
+import type { WebIconGrabber, WebIcon } from './icon';
+export { getIcons, WebIconGrabber, WebIcon };
