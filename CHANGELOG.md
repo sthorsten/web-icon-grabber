@@ -10,6 +10,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -/-
 
 
+## [1.0.2] - 2022-12-22
+
+### Added
+
+- JSDoc comments for exporting methods and types
+
+### Changed
+
+- Moved logic to new `handler.ts` file
+- Optimized / fixed imports to allow type imports
+
+### Removed
+
+- Attribute `preferredMinSize` as it's not needed
+
+
 ## [1.0.1] - 2022-12-20
 
 ### Added
@@ -33,7 +49,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add LICENSE
 
 
-[Unreleased]: https://github.com/sthorsten/web-icon-grabber/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/sthorsten/web-icon-grabber/compare/v1.0.2...HEAD
 
+[1.0.2]: https://github.com/sthorsten/web-icon-grabber/releases/tag/v1.0.2
 [1.0.1]: https://github.com/sthorsten/web-icon-grabber/releases/tag/v1.0.1
 [1.0.0]: https://github.com/sthorsten/web-icon-grabber/releases/tag/v1.0.0
